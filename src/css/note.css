@@ -1,0 +1,152 @@
+:root {
+  --font-Inter: 'Inter', sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: var(--font-Inter);
+  background-color: whitesmoke;
+}
+
+.note-app {
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.note-app h1 {
+  font-weight: normal;
+  font-size: 48px;
+  margin-bottom: 32px;
+}
+
+.note-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 16px;
+  border-style: ridge;
+  box-shadow: 10px 10px 8px #888888;
+  max-width: 300px;
+  padding: 16px;
+  border-radius: 8px;
+  text-align: justify;
+}
+.note-item__body {
+  flex-grow: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+}
+.note-item__buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.note-item__delete,
+.note-item__archive {
+  padding: 8px;
+  font-size: 16px;
+  background-color: orangered;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.note-item__archive {
+  background-color: green;
+}
+
+.note-item__delete {
+  padding: 8px;
+  height: 50px;
+  font-size: 18px;
+  background-color: orangered;
+  color: white;
+  border: 0;
+  border-radius: 4px;
+}
+.note-item__body h2 {
+  margin-bottom: 10px;
+}
+
+.note-item__body p {
+  color: #8d8686;
+}
+
+.note-item__body p,
+h5 {
+  margin-top: 10px;
+  line-height: 1.5;
+}
+
+.notes-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.note-app h1,
+h2 {
+  text-align: center;
+}
+
+.note-app .search-query {
+  border-radius: 8px;
+  margin: 10px;
+  height: 35px;
+  width: 200px;
+  margin-bottom: 10px;
+  box-shadow: 10px 10px 8px #888888;
+}
+.note-input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px auto;
+  max-width: 800px;
+  padding: 10px;
+  border: 1px outset black;
+  border-radius: 8px;
+  box-shadow: 10px 10px 8px #888888;
+  background-color: #f0f0f0;
+}
+
+.note-input input {
+  display: block;
+  width: 100%;
+  border-radius: 8px;
+  margin: 10px 0;
+  padding: 10px;
+  font-family: var(--font-Inter);
+}
+.character-count {
+  align-self: flex-end;
+  text-align: right;
+  width: 100%;
+  font-size: 12px;
+  color: #555;
+  margin-top: 5px;
+}
+
+.note-input textarea {
+  display: block;
+  width: 100%;
+  border-radius: 8px;
+  margin: 10px 0;
+  padding: 10px;
+  font-family: var(--font-Inter);
+}
+.note-input button {
+  width: 50%;
+  margin-top: 10px;
+  border-radius: 8px;
+  background-color: #77e1f6;
+  padding: 8px;
+  font-family: var(--font-Inter);
+}
